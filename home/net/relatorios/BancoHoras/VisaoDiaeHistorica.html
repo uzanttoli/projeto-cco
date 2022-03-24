@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCO | ACOMPANHAMENTO BANCO DE HORAS</title>
+    <link rel="shortcut icon" href="img/imgLogin.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <a href="file:\\se0001et0612\cco/site/home/net/Centro%20de%20Controle%20Operacional.html">
+            <img src="img/Home-icon.png" alt="" width="34px">
+        </a>
+        <div id="header">
+            <h1>
+                Centro de Controle Operacional | Visão dia e Historica</h1>
+        </div>
+        <div id="content">
+            <div style=" width: 800px; margin: 20px auto;">
+                <p id="att"><b>ATUALIZAÇÃO RECENTE</b></p>
+                <div>
+                    <h2
+                        style=" text-transform: uppercase; text-align: center; float: left; margin-left: 264px; margin-right: 15px; margin-top: 3px; ">
+                        BANCO DE HORAS
+                    </h2>
+                    <a class="baixar"
+                        href="\\se0001et0612\cco\RELATORIOS\ACOMPANHAMENTO_BANCO_HORAS\AGOSTO_2021\BANCO_DE_HORAS.XLSB"
+                        title="Aqui você conseguirá baixar o arquivo mais atualizado."
+                        onclick="exibeMensagem()">Baixar</a>
+                        <br>
+                        <br>
+                        <br>
+                </div>
+                <br>
+
+                <!--<div style=" clear: left; float: left; width: 100%; padding: 8px 0px;">
+        <h3 style=" float: left; margin: 10px;">Atualizado até 22/06/2021</h3>
+        <span style=" float: left; display: block; line-height: 41px; height: 41px; padding: 0px 10px;">2,7 MB</span>
+        <a class="baixar" href="#">Download</a>
+    </div>-->
+                <!--Demais Relatirios com link-->
+                <div
+                    style=" clear: both; float: left; width: 350px; margin-left: 230px; border: 1px solid #ccc; border-radius: 25px;">
+                    <h5 style=" display: block; text-indent: 20px; height: 40px; line-height: 40px;">Historico: </h5>
+                    <table style=" margin: 0 auto;">
+
+                        <tr>
+                            <td style=" width: 80px; text-align: center; ">31/07/2021</td>
+                            <td style=" width: 100px;"><a class="download"
+                                    href="\\se0001et0612\cco\RELATORIOS\ACOMPANHAMENTO_BANCO_HORAS\JULHO_2021\BANCO_DE_HORAS.XLSB"><button
+                                        onclick="exibeMensagem()">Download</button></a></td>
+                        </tr>
+
+                    </table>
+                    <!--Aqui é carregada a lista de atualizacoes-->
+                    <br>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--VISAO HISTORICA-->
+        <!--<section>
+    <div id="wrap">
+        <div id="dheader">
+                <h2>Demais relatorios com Visão Historica</h2>
+        </div>
+      
+        <div id="content">      
+<div style=" width: 800px; margin: 10px auto;">
+
+
+    <h5 style=" display: block; text-indent: 20px; height: 40px; line-height: 40px; margin-left: 120px;"> Acesso para Demais Relatorios:</h5>
+    <div style=" clear: both; width: 550px; border: 1px solid #ccc; border-radius: 25px; margin-left: 130px;">
+        <table style=" margin: 5px auto;">
+            <tr>
+                <td style=" width: 110px; text-align: center;">Ocupação Online</td>
+                <td style=" width: 100px;"><a class="download" href="file://se0001et1007/fluxos_operacionais$/site/relatorios/OcupacaoOnline/VisaoDiaeHistorica.html"><button>Acessar</button></a></td>
+                <td style=" width: 110px; text-align: center;">Nice & Trieste</td>
+                <td style=" width: 100px;"><a class="download" href="file://se0001et1007/fluxos_operacionais$/site/relatorios/Nice&Trieste/VisaoDiaeHistorica.html"><button>Acessar</button></a></td>
+            </tr>
+            <tr>
+                <td style=" width: 110px; text-align: center;">Aderencia Solar</td>
+                <td style=" width: 100px;"><a class="download" href="file://se0001et1007/fluxos_operacionais$/site/relatorios/AderenciaSolar/VisaoDiaeHistorica.html"><button>Acessar</button></a></td>
+                <td style=" width: 150px; text-align: center;">Scoreboard COMBO</td>
+                <td style=" width: 100px;"><a class="download" href="file://se0001et1007/fluxos_operacionais$/site/relatorios/ScoreboardCOMBO/VisaoDiaeHistorica.html"><button>Acessar</button></a></td>
+            </tr>
+            <tr>
+                <td style=" width: 140px; text-align: center;">Projeção RV</td>
+                <td style=" width: 100px;"><a class="download" href="file://se0001et1007/fluxos_operacionais$/site/relatorios/ProjecaoRV/VisaoDiaeHistorica.html"><button>Acessar</button></a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</section>-->
+        <div id="footer">
+            <span class="contato">
+                <a href="mailto:cco@almavivadobrasil.com.br">Dúvidas ou sugestões</a> |
+                &copy Centro de Controle Operacional
+            </span>
+            <span class="assinatura">
+                Versão 1.3.4 | <a href="mailto:4602597@almavivadobrasil.com.br">Uanderson de Oliveira dos Santos</a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

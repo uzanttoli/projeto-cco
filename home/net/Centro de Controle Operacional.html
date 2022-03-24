@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCO | Relatorios</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="shortcut icon" href="img/imgLogin.png" />
+  <link rel="stylesheet" href="AcessoRapido/" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="java.js"></script>
+</head>
+
+<body style="min-height: 100%; min-width: 100%; display: block">
+  <header>
+    <h1 id="cabeca">Centro de Controle operacional</h1>
+  </header>
+
+  <section class="menuInterativo">
+    <h3 style="top: 1px; position: absolute; left: 5px; font-size: 16px">
+      Produto selecionado:
+    </h3>
+  </section>
+
+  <table class="tbMenu">
+    <tr id="net">
+      <td>
+        <a href="file:\\se0001et0612\cco/site/home/net/Centro%20de%20Controle%20Operacional.html"
+          title="Relatorios Net">NET</a>
+      </td>
+    </tr>
+    <tr id="claro">
+      <td>
+        <a href="file:\\se0001et0612\cco/site/home/claro/Centro%20de%20Controle%20Operacional.html"
+          title="Relatorios Claro">| CLARO</a>
+      </td>
+    </tr>
+    <tr id="Qualidade">
+      <td>
+        <a href="file:\\se0001et0612\cco/site/home/qualidade/Centro%20de%20Controle%20Operacional.html"
+          title="Relatorios Qualidade">| QUALIDADE</a>
+      </td>
+    </tr>
+  </table>
+
+  <section class="mediaInc">
+    <nav id="subClasses">
+      Selecione o produto:<br />
+      <a href="#">NET</a> | <a href="#">CLARO</a> |
+      <a href="#">QUALIDADE</a>
+    </nav>
+  </section>
+
+  <div id="comunicados">
+    <div class="titlecom" style="height: 95px; border: none">
+      <div class="item-header" style="height: 45px; border: none; padding-top: 8px; font-size: 20px">
+        <img src="img/exclamation-mark-yellow-icon.png" alt="" height="26px" width="26px"
+          style="position: absolute; left: 25px" />
+        <h3 class="titulo"><u>AVISOS IMPORTANTES</u></h3>
+      </div>
+      <div class="item-body" style="height: 55px; border: none">
+        <p class="descricao">
+          Atualizações recentes ou alguma divergencia <br />nos relatorios
+          enviados pelo CCO
+        </p>
+      </div>
+    </div>
+    <div style="height: 200px; border: none; overflow: auto">
+      <ul>
+        <li>
+          O Internet Explorer está incompativel com a versão atual. Para
+          download dos relatorios, será necessario acessar diretamente no
+          <b>GOOGLE CHROME</b>. | <a href="#"> 06/08/2021</a>
+        </li>
+        <li>
+          O relatorio de VT's Improdutiva foi retirado da
+          <b>Pagina Web CCO | Relatorios</b>. Caso precisem, sinalizar por
+          <a href="mailto:cco@almavivadovbrasil.com.br">Email</a> com o mês
+          desejado. | <a href="#"> 04/08/2021</a>
+        </li>
+        <li>
+          Afim de facilitar o controle de redução de custos, nos dias com alta
+          disponibilidade. Foi criado o <b>ACP BANCO DE HORAS</b>. |
+          <a href="#"> 13/07/2021</a>
+        </li>
+        <li>
+          Foi adicionado <b>Historico</b> para todos os relatorios. |
+          <a href="#"> 01/07/2021</a>
+        </li>
+        <li>
+          Pagina web <b>CCO | Relatorios</b> e demais caminhos da pagina estão
+          compativeis com o navegador Internet Explorer |
+          <a href="#"> 30/06/2021</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="faux-row"></div>
+  <div id="content">
+    <div class="apps prlx" data-speed="2" style="background-position: 50% -173.5px">
+      <section class="container">
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/ScoreboardCOMBO/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/rating_102349.png" alt="" height="65px" width="65px" style="margin-top: 10px" />
+              <h4 class="nome fnt2">SCOREBOARD COMBO</h4>
+              <p class="descricao">
+                Identificar os principais ofensores do indicador, afim de
+                chegarem a um denominador comum.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/ScoreboardMTF/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/rating_102349.png" alt="" height="65px" width="65px" style="margin-top: 10px" />
+              <h4 class="nome fnt2">SCOREBOARD MTF</h4>
+              <p class="descricao">
+                Identificar os principais ofensores do indicador, afim de
+                chegarem a um denominador comum.
+              </p>
+            </div>
+          </article>
+        </a>
+        <!-- <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/ControledePonto/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/Time-Sandglass-icon.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">CONTROLE DE PONTO</h4>
+                <p class="descricao">
+                  Relatorio utilizado com base no controle da
+                  <b style="color: rgb(255, 0, 0)">Equipe TimeSheet</b>
+                  referente aos ajustes de ponto da folha atual.
+                </p>
+              </div>
+            </article>
+          </a> -->
+        <!-- <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/Dosimetria/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/user-warning_114415.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">DOSIMETRIA</h4>
+                <p class="descricao">
+                  Acompanhamento com visão geral das RELATORIOS NET referente as
+                  Faltas, Marcações Invalidas e Atrasos/Ausencias.
+                </p>
+              </div>
+            </article>
+          </a> -->
+        <!-- <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/TmtPlanejadoXTmtRealizado/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/Actions-player-time-icon.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">TMT PLAN x REALIZADO</h4>
+                <p class="descricao">
+                  Aqui você conseguirá baixar o acompanhamento D-1 do TMT MTF e
+                  Combo atualizado.
+                </p>
+              </div>
+            </article>
+          </a> -->
+        <!-- <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/AderenciaSolar/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/avatar200x200.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">ADERENCIA SOLAR</h4>
+                <p class="descricao">
+                  Aqui você conseguirá acompanhar todos os colaborados TREINADOS
+                  QUE LOGARAM, QUE NÃO LOGARAM, etc.
+                </p>
+              </div>
+            </article>
+          </a> -->
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/OcorrenciaFinanceiras/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/Financial-icon.png" alt="" height="65px" width="65px" style="margin-top: 10px" />
+              <h4 class="nome fnt2">OC's FINANCEIRAS</h4>
+              <p class="descricao">
+                Identificar o quantitativo e percentual das principais
+                indevidas geradas pelas RELATORIOS
+                <b style="color: rgb(255, 0, 0)">NET COMBO e NET MTF</b>.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/OcupacaoOnline/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/network_society_communication_online_chat_icon_143342.png" alt="" height="65px" width="65px"
+                style="margin-top: 10px" />
+              <h4 id="fire" class="nome fnt2">OCUPACAO ONLINE</h4>
+              <p class="descricao">
+                Nele teremos as visões de Absenteísmo, Inaderência, Controle
+                de Pausas, Controle de Login, dentre outras..
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/Nice&Trieste/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/hierarchy-icon.png" alt="" height="65px" width="65px" style="margin-top: 10px" />
+              <h4 class="nome fnt2">NICE & TRIESTE</h4>
+              <p class="descricao">
+                Aqui você conseguirá baixar o acompanhamento atualizado dos
+                Status, Hierarquias, Escalados, Controle de Home Office, etc.
+              </p>
+            </div>
+          </article>
+        </a>
+        <!-- <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/BancoHoras/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/cash-icon.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">ACP BANCO DE HORAS</h4>
+                <p class="descricao">
+                  De Indicadores operacionais versus Horas a vencer, afim de
+                  facilitar o controle de redução de custos...
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/Tb-Pagamentos/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/3890933-check-money-order-payment-sign_111185.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4
+                  class="nome fnt2"
+                  title="Tabulacoes estão liberadas ate a data 15/07/2021."
+                >
+                  TAB ERRO DE PAGAMENTO
+                </h4>
+                <p
+                  class="descricao"
+                  title="Tabulacoes estão liberadas ate a data 15/07/2021."
+                >
+                  Aqui você conseguirá baixar o tabulador para cadastro dos
+                  erros de pagamentos.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/BookdeAuditoria/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/library_folder_graphite_13791.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">BOOK DE AUDITORIAS</h4>
+                <p class="descricao">
+                  Acompanhamento das monitorias de VT Improdutiva, OC's
+                  Financeiras Indevidas para identificar oportunidades.
+                </p>
+              </div>
+            </article>
+          </a>-->
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/Rechamada-Tmt-Auditoria/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/employee_account_business_time_clock_icon_124657.png" alt="" height="65px" width="65px"
+                style="margin-top: 10px" />
+              <h4 class="nome fnt2">RECH, TMT & AUDITORIA</h4>
+              <p class="descricao">
+                Acompanhamento Matricial de evolução (TMT x Rechamada x
+                Monitorias).
+              </p>
+            </div>
+          </article>
+        </a>
+        <!--<a
+            href="file:\\se0001et0612\cco/site/home/net/relatorios/ProjecaoRV/VisaoDiaeHistorica.html"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/profits_78367.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">PROJEÇÃO RV</h4>
+                <p class="descricao"></p>
+              </div>
+            </article>
+          </a> -->
+        <a href="file:\\se0001et0612\cco/site/home/net/relatorios/Performance/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="img/performance-systeme-OS-icon.png" alt="" height="65px" width="65px"
+                style="margin-top: 10px" />
+              <h4 class="nome fnt2">PERFORMANCE</h4>
+              <p class="descricao"></p>
+            </div>
+          </article>
+        </a>
+        <a href="file://se0001et0612/CCO/SITE/home/net/relatorios/Controle-Improdutivos/VisaoDiaeHistorica.html">
+          <article class="app">
+            <div>
+              <img src="\\se0001et0612\CCO\SITE\home\net\img\personas-improductivas-trabajo-small-16_9.png" alt=""
+                height="65px" width="75px" style="margin-top: 10px" />
+              <h4 id="fire" class="nome fnt2">CONTROLE IMPRODUTIVOS</h4>
+              <p class="descricao">
+                Aqui você conseguirá baixar o consolidado <b style="color: rgb(255, 0, 34)">IMPRODUTIVOS.</b>
+              </p>
+            </div>
+          </article>
+          <a href="\\se0001et0612\CCO\SITE\home\net\relatorios\Interceptação\VisaoDiaeHistorica.html">
+            <article class="app">
+              <div>
+                <img src="\\se0001et0612\CCO\SITE\home\net\img\intercptação2.png" alt=""
+                  height="65px" width="90px" style="margin-top: 10px" />
+                <h4 id="fire" class="nome fnt2">INTERCEPTAÇÃO S2S</h4>
+                <p class="descricao">
+                  Aqui você conseguirá baixar a <b style="color: rgb(255, 0, 34)">INTERCEPTAÇÃO S2S.</b>
+                </p>
+              </div>
+            </article>
+         <!-- <a 
+            href="\\se0001et0612\CCO\RELATORIOS\PILOTO_PYXIS\AC_PILOTO_PYXIS.xlsb"
+            onclick="exibeMensagem()"
+          >
+            <article class="app">
+              <div>
+                <img
+                  src="img/logo-pyxis.png"
+                  alt=""
+                  height="65px"
+                  width="65px"
+                  style="margin-top: 10px"
+                />
+                <h4 class="nome fnt2">ACOMPANHAMENTO PILOTO PYXIS</h4>
+                <p class="descricao"></p>
+              </div>
+            </article>
+          </a>  -->
+        <!-- <a
+          href="C:\Users\lirvyne\Desktop\home\net\relatorios\Troca Feriado\VisaoDiaeHistorica.html"
+          >
+          <article class="app">
+            <div>
+              <img
+                src="img/lucros.png"
+                alt=""
+                height="65px"
+                width="65px"
+                style="margin-top: 10px"
+              />
+              <h4 id="fire" class="nome fnt2">TROCA FERIADO</h4>
+              <p class="descricao">
+                Aqui você conseguirá baixar a validação da <b style="color: rgb(255, 0, 34)">FOLGA PONTE.</b>
+              </p>
+            </div>
+          </article>
+          </a> -->
+        </section>
+        <!-- <div class="clearfix faux-row"></div>
+      </div>
+    </div>
+    <footer class="fnt4">
+      <p id="private-policy"></p>
+      <p class="copyright">
+        <span>2021</span>
+        <span class="separador">&nbsp;|&nbsp;</span> &copy Centro de Controle
+        Operacional
+      </p>
+      <p></p>
+
+      <p id="system-info">
+        Versão <strong style="font-size: 15px">1.3.5</strong> | Desenvolvido por
+        <strong>Uanderson de Oliveira & Lucas Irvyne</strong>
+      </p>
+    </footer>  -->
+
+
+</body>
+
+</html>

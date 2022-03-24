@@ -1,0 +1,536 @@
+.app:hover {
+    background: rgba(255, 255, 255, 0.884);
+    color: rgb(16, 25, 128);
+    border: 1.5px solid rgb(26, 34, 117);
+    border-top-color: rgb(26, 34, 117);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(26, 34, 117);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(26, 34, 117);
+    border-bottom-width: 1px;
+    border-left-color: rgb(26, 34, 117);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    cursor: pointer;
+    box-shadow: 6px 7px 8px rgba(26, 34, 117, 0.205);
+}
+
+
+/*CABECALHO*/
+
+#cabeca {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#imgpicture {
+    width: 50px;
+    height: 39px;
+}
+
+#imgLogin {
+    margin-right: -350px;
+    padding-left: 270px;
+    height: 45px;
+}
+
+
+/**********************************/
+
+.atualizacao {
+    font-size: 12px;
+    width: 115px;
+    display: inline;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    margin: 10px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #034d24;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #09552b;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-shadow: 1px 1px #000;
+}
+
+element.style {
+    background-position: 50% 0px;
+}
+
+
+/* LINKS RAPIDOS*/
+
+header a,
+header a:link,
+header a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: #fff;
+}
+
+header .link {
+    display: block;
+    float: right;
+    margin: 0 10px;
+}
+
+.fnt4 {
+    font-size: 12px;
+}
+
+.apps {
+    height: inherit;
+}
+
+
+/* ------------- */
+
+.prlx {
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.apps {
+    background-color: #ffffff;
+    /*background-image: url();*/
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+/*aqui*/
+
+.app {
+    float: left;
+    width: 23.779296875%;
+    height: 250px;
+    margin: .9765625% 0 0 .9765625%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0% 0;
+    border: 1.5px solid #ac0b0b;
+    border-top-color: rgb(34, 34, 34);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(34, 34, 34);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(34, 34, 34);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(34, 34, 34);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    cursor: pointer;
+    border-radius: 45px;
+}
+
+article,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+
+/***************************************/
+
+.app .botao {
+    border-radius: 7px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #222;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(34, 34, 34);
+}
+
+.app:hover .botao {
+    background: #e98707;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(236, 159, 15);
+}
+
+body {
+    text-align: center;
+    line-height: 1;
+    color: #ffffff;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: Tahoma, Arial;
+}
+
+div {
+    display: block;
+}
+
+.app .descricao {
+    line-height: 30px;
+    color: rgb(68, 67, 67);
+}
+
+
+footer {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #0c2135;
+    background-color: #222;
+    background-color: #222;
+    color: #ccc;
+    line-height: 40px;
+    display: block;
+    margin-top: 100px;
+}
+
+
+/*PICTURE TITLE*/
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.fnt4 {
+    font-size: 14.5px;
+}
+
+footer #private-policy {
+    margin-left: 10px;
+}
+
+footer p {
+    display: inline;
+    font-size: 15px;
+}
+
+footer .copyright {
+    float: left;
+    margin-left: 12px;
+}
+
+footer #alma-logo {
+    height: 30px;
+    margin: 5px 10px 5px 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    float: right;
+}
+
+footer #system-info {
+    float: right;
+    margin-right: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.faux-row {
+    height: 1px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 5;
+    border: 0;
+    outline: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    vertical-align: baseline;
+}
+
+.app.nome {
+    line-height: 40px;
+}
+
+.fnt2 {
+    font-size: 22px;
+}
+
+h4 {
+    display: block;
+    -webkit-margin-before: .6em;
+    -webkit-margin-after: .9em;
+    -webkit-margin-start: 1px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 65em!important;
+    height: 100%;
+    margin: 0 4.70%;
+    align-items: center;
+    display: block;
+}
+
+
+/*Aqui*/
+
+header {
+    line-height: 30px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #030303;
+    background-color: rgb(23, 27, 73);
+    display: block;
+}
+
+header a>img {
+    border: none;
+}
+
+
+/*busca*/
+
+input {
+    float: right;
+}
+
+#content {
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+#box-operacao .titulo {
+    font-family: Arial Rounded MT Bold Verdana;
+    font-size: 18px;
+    color: #333;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+
+#box-operacao .descricao {
+    clear: left;
+    padding: 10px;
+    text-indent: 20px;
+    color: #333;
+    background-color: #FBFBFB;
+}
+
+.mediaInc {
+    width: calc(15% - 75px);
+    color: #000;
+    display: none;
+}
+
+
+
+#comunicados {
+    border: 1px solid #DDD;
+    margin: 2px 2px 0 0;
+}
+
+
+#comunicados {
+    float: left;
+    width: 340px;
+    height: 295px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #CCC;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+#comunicados ul li {
+    border-bottom: 1px solid #CCC;
+    text-indent: 10px;
+    padding: 10px;
+    list-style: upper-roman;
+    text-align: justify;
+    color: rgb(231, 0, 0);
+    font-size: 14px;
+}
+
+#comunicados ul li:hover {
+    border-bottom: 1px solid #CCC;
+    text-indent: 10px;
+    padding: 10px;
+    list-style: upper-roman;
+    text-align: justify;
+    color: rgb(231, 0, 0);
+    font-size: 14px;
+    background-color: rgba(204, 204, 204, 0.315);
+    cursor: pointer;
+}
+
+#comunicados ul a {
+    text-transform: uppercase;
+}
+
+.titulo,
+.descricao {
+    text-align: center;
+}
+
+.titlecom {
+    background-color: rgba(224, 224, 224, 0.918);
+    color: rgb(5, 5, 5);
+}
+
+#net {
+    position: absolute;
+    top: 28px;
+    left: 5px;
+    background-color: rgb(43, 119, 13);
+    border-radius: 10px;
+}
+
+#claro {
+    position: absolute;
+    top: 28px;
+    left: 41px;
+}
+
+#claro a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+#net a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+#Qualidade {
+    position: absolute;
+    top: 28px;
+    border-radius: 10px;
+    left: 104px;
+}
+
+#Qualidade a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menuInterativo {
+    top: 3px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    height: 53px;
+    width: 205px;
+    border-radius: 10px;
+}
