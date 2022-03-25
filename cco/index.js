@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const mime = require("mime");
 const fs = require("fs");
+const readFilesRelatorios = require("./modules/readFiles.js");
 
 app.set("view engine", "ejs");
 
@@ -49,6 +50,9 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/teste", (req, res) => {
+  res.send(readFilesRelatorios.lerArquivos());
+});
 app.get("/download", (req, res) => {
   //   var relatorios = req.params.relatorios;
   var relatorios = "teste.txt";

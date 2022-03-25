@@ -1,17 +1,21 @@
 <%- include ('partials/header.ejs') %>
 <body>
   <%- include ('partials/navBar.ejs') %>
+  <br />
   <div class="container">
-    <br />
     <div class="row">
       <% arquivos.forEach(arquivo => {%>
-      <div class="col" style="margin-bottom: 10px">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title"><%= arquivo.title %></h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <div class="col-3" style="margin-bottom: 10px">
+        <div class="card border-primary" style="max-width: 18rem">
+          <div class="card-header"><%= arquivo.title %></div>
+          <div class="card-body text-primary">
+            <!-- <h5 class="card-title"><%= arquivo.title %></h5> -->
             <p class="card-text"><%= arquivo.description %></p>
-            <a href="/download" class="card-link">Baixar</a>
+            <a href="/download">
+              <button class="col-12 btn btn-primary" type="button">
+                Baixar
+              </button>
+            </a>
           </div>
         </div>
       </div>
