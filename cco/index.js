@@ -8,10 +8,44 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
+var arquivos = [
+  {
+    title: "Scoreboard COMBO",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+  {
+    title: "Scoreboard MTF",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+  {
+    title: "Scoreboard MTF",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+  {
+    title: "Scoreboard MTF",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+  {
+    title: "Scoreboard MTF",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+  {
+    title: "Scoreboard MTF",
+    description: "Relatorio com medida operacional",
+    size: "3M",
+  },
+];
+
 app.get("/", (req, res) => {
   var nome = "Relatorios";
   res.render("index", {
     nome: nome,
+    arquivos: arquivos,
   });
 });
 
